@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 10" width="100%" height="10">
+  <defs>
+    <linearGradient id="div-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="20%" stop-color="#bc8cff" />
+      <stop offset="50%" stop-color="#58a6ff" />
+      <stop offset="80%" stop-color="#56d4dd" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .line {
+      fill: none;
+      stroke: url(#div-grad);
+      stroke-width: 2;
+      filter: url(#glow);
+      opacity: 0.8;
+    }
+  </style>
+  <path d="M 10 5 L 790 5" class="line" />
+</svg>

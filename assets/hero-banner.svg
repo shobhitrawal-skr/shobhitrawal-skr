@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas matching GitHub Dark Mode -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="60%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bc8cff" />
+      <stop offset="50%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#56d4dd" />
+    </linearGradient>
+
+    <!-- Metallic/Neon text gradient -->
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d2a8ff" />
+      <stop offset="40%" stop-color="#a5d6ff" />
+      <stop offset="75%" stop-color="#56d4dd" />
+      <stop offset="100%" stop-color="#7ee787" />
+    </linearGradient>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Clipping paths for Typewriter -->
+    <clipPath id="clip-1">
+      <rect id="clip-rect-1" x="250" y="155" width="0" height="30" />
+    </clipPath>
+    <clipPath id="clip-2">
+      <rect id="clip-rect-2" x="250" y="155" width="0" height="30" />
+    </clipPath>
+    <clipPath id="clip-3">
+      <rect id="clip-rect-3" x="250" y="155" width="0" height="30" />
+    </clipPath>
+    <clipPath id="clip-4">
+      <rect id="clip-rect-4" x="250" y="155" width="0" height="30" />
+    </clipPath>
+    <!-- Avatar Clipping Path -->
+    <clipPath id="avatar-clip">
+      <circle cx="670" cy="125" r="55" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bg-gradient); }
+    
+    /* Background Grid */
+    .grid {
+      fill: none;
+      stroke: #161b22;
+      stroke-width: 1;
+      opacity: 0.8;
+    }
+
+    /* Outer glowing animated border */
+    .border-glow {
+      fill: none;
+      stroke: url(#border-gradient);
+      stroke-width: 1.5;
+      stroke-dasharray: 150, 1890;
+      animation: border-travel 10s linear infinite;
+    }
+
+    /* Inner static border matching GitHub styles */
+    .border-inner {
+      fill: none;
+      stroke: #30363d;
+      stroke-width: 1.5;
+    }
+
+    @keyframes border-travel {
+      from { stroke-dashoffset: 2040; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Typography */
+    .main-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: url(#text-gradient);
+      letter-spacing: 1.5px;
+    }
+
+    .prompt-text {
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+      font-weight: 600;
+      font-size: 17px;
+      fill: #8b949e;
+    }
+
+    .typed-text {
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+      font-weight: 600;
+      font-size: 17px;
+      fill: #58a6ff;
+    }
+
+    .cursor {
+      fill: #58a6ff;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    /* Clip Path Keyframes */
+    #clip-rect-1 { animation: type1 16s steps(25) infinite; }
+    #clip-rect-2 { animation: type2 16s steps(25) infinite; }
+    #clip-rect-3 { animation: type3 16s steps(25) infinite; }
+    #clip-rect-4 { animation: type4 16s steps(25) infinite; }
+
+    @keyframes type1 {
+      0% { width: 0; }
+      2% { width: 0; }
+      12%, 22% { width: 450px; }
+      24%, 100% { width: 0; }
+    }
+    @keyframes type2 {
+      0%, 25% { width: 0; }
+      27% { width: 0; }
+      37%, 47% { width: 450px; }
+      49%, 100% { width: 0; }
+    }
+    @keyframes type3 {
+      0%, 50% { width: 0; }
+      52% { width: 0; }
+      62%, 72% { width: 450px; }
+      74%, 100% { width: 0; }
+    }
+    @keyframes type4 {
+      0%, 75% { width: 0; }
+      77% { width: 0; }
+      87%, 97% { width: 450px; }
+      99%, 100% { width: 0; }
+    }
+
+    /* Cursor keyframes */
+    .cursor-anim { animation: cursor-move 16s infinite; }
+    @keyframes cursor-move {
+      0% { transform: translateX(0); opacity: 1; }
+      2% { transform: translateX(0); opacity: 1; }
+      12%, 22% { transform: translateX(220px); opacity: 1; }
+      23% { transform: translateX(0); opacity: 0; }
+      24% { transform: translateX(0); opacity: 1; }
+      
+      25% { transform: translateX(0); opacity: 1; }
+      27% { transform: translateX(0); opacity: 1; }
+      37%, 47% { transform: translateX(110px); opacity: 1; }
+      48% { transform: translateX(0); opacity: 0; }
+      49% { transform: translateX(0); opacity: 1; }
+
+      50% { transform: translateX(0); opacity: 1; }
+      52% { transform: translateX(0); opacity: 1; }
+      62%, 72% { transform: translateX(210px); opacity: 1; }
+      73% { transform: translateX(0); opacity: 0; }
+      74% { transform: translateX(0); opacity: 1; }
+
+      75% { transform: translateX(0); opacity: 1; }
+      77% { transform: translateX(0); opacity: 1; }
+      87%, 97% { transform: translateX(130px); opacity: 1; }
+      98% { transform: translateX(0); opacity: 0; }
+      99%, 100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* Git Graph Animation */
+    .branch-main { stroke: #3fb950; stroke-width: 2; fill: none; }
+    .branch-data { stroke: #58a6ff; stroke-width: 2; fill: none; }
+    .branch-ai { stroke: #bc8cff; stroke-width: 2; fill: none; }
+
+    .commit-node {
+      stroke-width: 2.5;
+      fill: #0d1117;
+      transition: all 0.3s;
+    }
+    .commit-main { stroke: #3fb950; }
+    .commit-data { stroke: #58a6ff; }
+    .commit-ai { stroke: #bc8cff; }
+
+    .pulse-glow {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { r: 4; opacity: 0.6; }
+      100% { r: 6.5; opacity: 1; filter: drop-shadow(0 0 5px currentColor); }
+    }
+
+    .float-panel {
+      animation: float 5s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-4px); }
+    }
+
+    .label-text {
+      font-family: -apple-system, sans-serif;
+      font-size: 9px;
+      fill: #8b949e;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" class="bg" />
+  
+  <!-- Subtly aligned diagonal grid lines -->
+  <g class="grid">
+    <path d="M-100,50 L900,50 M-100,100 L900,100 M-100,150 L900,150 M-100,200 L900,200" />
+    <path d="M100,-50 L100,350 M200,-50 L200,350 M300,-50 L300,350 M400,-50 L400,350 M500,-50 L500,350 M600,-50 L600,350 M700,-50 L700,350" stroke-dasharray="2,8" opacity="0.3" />
+  </g>
+
+  <!-- Borders -->
+  <rect x="10" y="10" width="780" height="240" rx="8" class="border-inner" />
+  <rect x="10" y="10" width="780" height="240" rx="8" class="border-glow" />
+
+  <!-- LEFT GRAPHIC: Premium Git Network Graph -->
+  <g class="float-panel" transform="translate(10, 0)">
+    <!-- Git Graph Branches -->
+    <!-- Main (Green) -->
+    <path d="M 50 35 L 50 225" class="branch-main" />
+    
+    <!-- Data/Spark Branch (Blue) -->
+    <path d="M 50 75 Q 90 95 90 120 L 90 150 Q 90 175 50 195" class="branch-data" />
+    
+    <!-- AI/Agent Branch (Purple) -->
+    <path d="M 50 110 Q 130 130 130 150 Q 130 170 50 195" class="branch-ai" />
+
+    <!-- Pulse nodes on Graph intersections -->
+    <circle cx="50" cy="50" r="5" class="commit-node commit-main pulse-glow" color="#3fb950" />
+    <circle cx="90" cy="110" r="5" class="commit-node commit-data pulse-glow" color="#58a6ff" style="animation-delay: 0.5s;" />
+    <circle cx="130" cy="150" r="5" class="commit-node commit-ai pulse-glow" color="#bc8cff" style="animation-delay: 1.0s;" />
+    <circle cx="50" cy="195" r="6" class="commit-node commit-main pulse-glow" color="#7ee787" style="animation-delay: 1.5s;" />
+
+    <!-- Branch Labels -->
+    <text x="60" y="53" class="label-text">main</text>
+    <text x="100" y="113" class="label-text">dev/pyspark</text>
+    <text x="140" y="153" class="label-text">feature/ai-agents</text>
+    <text x="60" y="198" class="label-text" font-weight="bold" fill="#7ee787">v2.0.0 (merged)</text>
+  </g>
+
+  <!-- CENTER/RIGHT CONTENT: Main Brand Typography -->
+  <g transform="translate(15, 0)">
+    <!-- Title: Shobhit Rawal -->
+    <text x="230" y="130" class="main-title">SHOBHIT RAWAL</text>
+
+    <!-- Subtitle Terminal Line -->
+    <text x="230" y="175" class="prompt-text">shobhitrawal-skr ~ $</text>
+
+    <!-- Typewriter text nodes -->
+    <g>
+      <text x="430" y="175" class="typed-text" clip-path="url(#clip-1)">Senior Data Engineer</text>
+      <text x="430" y="175" class="typed-text" clip-path="url(#clip-2)">AI Builder</text>
+      <text x="430" y="175" class="typed-text" clip-path="url(#clip-3)">Open Source Explorer</text>
+      <text x="430" y="175" class="typed-text" clip-path="url(#clip-4)">Tech Creator</text>
+    </g>
+
+    <!-- Blinking Terminal Cursor -->
+    <g class="cursor-anim" transform="translate(430, 0)">
+      <rect x="0" y="160" width="9" height="17" class="cursor" />
+    </g>
+
+    <!-- Bottom Badges / Tech Highlights -->
+    <g transform="translate(230, 212)">
+      <!-- Data Platform tag -->
+      <rect x="0" y="0" width="125" height="22" rx="4" fill="rgba(88, 166, 255, 0.1)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1" />
+      <text x="62.5" y="14" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#58a6ff" text-anchor="middle">⚡ DATA ENGINEERING</text>
+
+      <!-- Agentic AI tag -->
+      <rect x="135" y="0" width="105" height="22" rx="4" fill="rgba(188, 140, 255, 0.1)" stroke="rgba(188, 140, 255, 0.2)" stroke-width="1" />
+      <text x="187.5" y="14" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#bc8cff" text-anchor="middle">🤖 AGENTIC AI</text>
+
+      <!-- Open Source tag -->
+      <rect x="250" y="0" width="115" height="22" rx="4" fill="rgba(126, 231, 135, 0.1)" stroke="rgba(126, 231, 135, 0.2)" stroke-width="1" />
+      <text x="307.5" y="14" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#7ee787" text-anchor="middle">🌍 OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <!-- RIGHT CONTENT: Futuristic Circular Avatar HUD -->
+  <g class="float-panel" style="animation-delay: 0.7s;">
+    <!-- Outer dash scanning circle -->
+    <circle cx="670" cy="125" r="65" stroke="#30363d" stroke-width="1.2" stroke-dasharray="4,6" fill="none" />
+    
+    <!-- Pulse ring -->
+    <circle cx="670" cy="125" r="58" stroke="url(#border-gradient)" stroke-width="2.5" fill="none" class="pulse-glow" color="#56d4dd" />
+    
+    <!-- Image -->
+    <image href="https://raw.githubusercontent.com/shobhitrawal-skr/shobhitrawal-skr/main/assets/profile-photo.jpeg" x="615" y="70" width="110" height="110" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice" />
+    
+    <!-- Status dot on avatar edge -->
+    <circle cx="709" cy="164" r="4.5" fill="#3fb950" stroke="#0d1117" stroke-width="1.5" />
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 36" width="280" height="36">
+  <defs>
+    <linearGradient id="tab-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+  <style>
+    .bg { fill: url(#tab-bg); stroke: #30363d; stroke-width: 1.2; rx: 6px; }
+    .bar { fill: #56d4dd; rx: 2px; }
+    .icon {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      fill: #56d4dd;
+    }
+    .text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      fill: #c9d1d9;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <rect x="1" y="1" width="278" height="34" class="bg" />
+  <rect x="8" y="8" width="4" height="20" class="bar" />
+  <text x="20" y="22" class="icon">🤖</text>
+  <text x="38" y="22" class="text">AI ENGINEERING & AGENTS</text>
+</svg>

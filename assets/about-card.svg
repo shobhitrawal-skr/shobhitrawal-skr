@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
+  <defs>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bc8cff" />
+      <stop offset="50%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#56d4dd" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 8px; }
+    .accent-bar { fill: url(#glow-grad); }
+    .terminal-header {
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace;
+      font-size: 13px;
+      fill: #8b949e;
+    }
+    .terminal-body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+      fill: #c9d1d9;
+      line-height: 1.6;
+    }
+    .bold-text { font-weight: bold; fill: #58a6ff; }
+    .highlight-text { font-weight: bold; fill: #bc8cff; }
+    .cyan-text { fill: #56d4dd; }
+  </style>
+  <rect x="2" y="2" width="796" height="176" class="bg" />
+  <rect x="2" y="2" width="4" height="176" class="accent-bar" />
+
+  <!-- Terminal Command -->
+  <text x="25" y="32" class="terminal-header">shobhitrawal-skr ~ $ <tspan fill="#7ee787">cat about_me.md</tspan></text>
+
+  <!-- Bio Content -->
+  <g class="terminal-body">
+    <text x="25" y="65">I am a <tspan class="bold-text">Senior Data Engineer</tspan> &amp; <tspan class="bold-text">AI Builder</tspan> with <tspan class="highlight-text">9+ years of professional experience</tspan> designing and constructing</text>
+    <text x="25" y="90">scalable, resilient data architectures. My core focus lies in building big data pipelines (PySpark, Spark),</text>
+    <text x="25" y="115">orchestrating workflows (Airflow), and leveraging cloud systems (Azure &amp; AWS) to deliver clean software products.</text>
+    <text x="25" y="145" class="cyan-text" font-family="ui-monospace, monospace" font-size="13px">🤖 Currently exploring AI Agents, Claude Code, MCP Servers, RAG systems, and open-source AI tools.</text>
+  </g>
+</svg>

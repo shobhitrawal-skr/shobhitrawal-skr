@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" width="800" height="270">
+  <defs>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bc8cff" />
+      <stop offset="50%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#56d4dd" />
+    </linearGradient>
+  </defs>
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 8px; }
+    .accent-bar { fill: url(#glow-grad); }
+    .category-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      fill: #8b949e;
+      letter-spacing: 1px;
+    }
+    .badge-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4px; }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #c9d1d9;
+    }
+  </style>
+  <rect x="2" y="2" width="796" height="266" class="bg" />
+  <rect x="2" y="2" width="4" height="266" class="accent-bar" />
+
+  <!-- Data Engineering Column -->
+  <g transform="translate(25, 25)">
+    <text x="0" y="15" class="category-title" fill="#bc8cff">📊 DATA ENGINEERING</text>
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="105" height="22" class="badge-bg" />
+      <text x="12" y="15" class="badge-text">Apache Spark</text>
+      
+      <rect x="0" y="30" width="105" height="22" class="badge-bg" />
+      <text x="12" y="45" class="badge-text">PySpark</text>
+      
+      <rect x="0" y="60" width="105" height="22" class="badge-bg" />
+      <text x="12" y="75" class="badge-text">Databricks</text>
+      
+      <rect x="0" y="90" width="105" height="22" class="badge-bg" />
+      <text x="12" y="105" class="badge-text">Delta Lake</text>
+
+      <rect x="0" y="120" width="105" height="22" class="badge-bg" />
+      <text x="12" y="135" class="badge-text">Apache Airflow</text>
+
+      <rect x="0" y="150" width="105" height="22" class="badge-bg" />
+      <text x="12" y="165" class="badge-text">Snowflake</text>
+    </g>
+  </g>
+
+  <!-- AI Engineering Column -->
+  <g transform="translate(175, 25)">
+    <text x="0" y="15" class="category-title" fill="#d2a8ff">🤖 AI ENGINEERING</text>
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="115" height="22" class="badge-bg" />
+      <text x="12" y="15" class="badge-text">LLMs</text>
+      
+      <rect x="0" y="30" width="115" height="22" class="badge-bg" />
+      <text x="12" y="45" class="badge-text">RAG Systems</text>
+      
+      <rect x="0" y="60" width="115" height="22" class="badge-bg" />
+      <text x="12" y="75" class="badge-text">AI Agents</text>
+      
+      <rect x="0" y="90" width="115" height="22" class="badge-bg" />
+      <text x="12" y="105" class="badge-text">Claude Code</text>
+
+      <rect x="0" y="120" width="115" height="22" class="badge-bg" />
+      <text x="12" y="135" class="badge-text">MCP Servers</text>
+    </g>
+  </g>
+
+  <!-- Cloud Column -->
+  <g transform="translate(335, 25)">
+    <text x="0" y="15" class="category-title" fill="#58a6ff">☁️ CLOUD PLATFORM</text>
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="110" height="22" class="badge-bg" />
+      <text x="12" y="15" class="badge-text">Microsoft Azure</text>
+      
+      <rect x="0" y="30" width="110" height="22" class="badge-bg" />
+      <text x="12" y="45" class="badge-text">AWS</text>
+      
+      <rect x="0" y="60" width="110" height="22" class="badge-bg" />
+      <text x="12" y="75" class="badge-text">Data Factory</text>
+    </g>
+  </g>
+
+  <!-- Languages Column -->
+  <g transform="translate(490, 25)">
+    <text x="0" y="15" class="category-title" fill="#7ee787">💻 LANGUAGES</text>
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="100" height="22" class="badge-bg" />
+      <text x="12" y="15" class="badge-text">Python</text>
+      
+      <rect x="0" y="30" width="100" height="22" class="badge-bg" />
+      <text x="12" y="45" class="badge-text">SQL</text>
+    </g>
+  </g>
+
+  <!-- Backend & Development Column -->
+  <g transform="translate(635, 25)">
+    <text x="0" y="15" class="category-title" fill="#56d4dd">🛠️ DEVELOPMENT</text>
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="110" height="22" class="badge-bg" />
+      <text x="12" y="15" class="badge-text">Django</text>
+      
+      <rect x="0" y="30" width="110" height="22" class="badge-bg" />
+      <text x="12" y="45" class="badge-text">FastAPI</text>
+
+      <rect x="0" y="60" width="110" height="22" class="badge-bg" />
+      <text x="12" y="75" class="badge-text">Git</text>
+
+      <rect x="0" y="90" width="110" height="22" class="badge-bg" />
+      <text x="12" y="105" class="badge-text">GitHub</text>
+    </g>
+  </g>
+</svg>

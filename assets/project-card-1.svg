@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 115" width="800" height="115">
+  <defs>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 6px; }
+    .accent-bar { fill: #bc8cff; }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      fill: #bc8cff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 12.5px;
+      fill: #8b949e;
+    }
+    .tech-badge-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4px; }
+    .tech-badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .star-icon { fill: #f0883e; opacity: 0.85; }
+  </style>
+  <rect x="2" y="2" width="796" height="111" class="bg" />
+  <rect x="2" y="2" width="4" height="111" class="accent-bar" />
+
+  <!-- Repo Icon / Title -->
+  <g transform="translate(25, 20)">
+    <!-- Book/Repo Icon -->
+    <path d="M 0 3 L 3 0 L 11 0 L 14 3 L 14 13 L 11 16 L 3 16 L 0 13 Z" fill="none" stroke="#bc8cff" stroke-width="1.5" />
+    <path d="M 3 0 L 3 16 M 11 0 L 11 16" stroke="#bc8cff" stroke-width="1" opacity="0.5" />
+    
+    <text x="22" y="13" class="project-title">senior-data-engineer-interview-playbook</text>
+  </g>
+
+  <!-- Description -->
+  <text x="25" y="58" class="project-desc">A complete playbook with SQL, PySpark, Spark internals, Databricks, Azure architectures, System Design, and coding questions.</text>
+
+  <!-- Tech tags -->
+  <g>
+      <rect x="25" y="82" width="65" height="20" class="tech-badge-bg" />
+      <text x="33" y="95" class="tech-badge-text" fill="#bc8cff">PySpark</text>
+      <rect x="98" y="82" width="100" height="20" class="tech-badge-bg" />
+      <text x="106" y="95" class="tech-badge-text" fill="#bc8cff">Apache Spark</text>
+      <rect x="206" y="82" width="37" height="20" class="tech-badge-bg" />
+      <text x="214" y="95" class="tech-badge-text" fill="#bc8cff">SQL</text>
+      <rect x="251" y="82" width="86" height="20" class="tech-badge-bg" />
+      <text x="259" y="95" class="tech-badge-text" fill="#bc8cff">Databricks</text>
+      <rect x="345" y="82" width="51" height="20" class="tech-badge-bg" />
+      <text x="353" y="95" class="tech-badge-text" fill="#bc8cff">Azure</text>
+      <rect x="404" y="82" width="86" height="20" class="tech-badge-bg" />
+      <text x="412" y="95" class="tech-badge-text" fill="#bc8cff">Delta Lake</text></g>
+
+  <!-- Star highlight -->
+  <g transform="translate(755, 15)">
+    <path class="star-icon" d="M 8 0 L 10.5 5.5 L 16 6 L 12 10 L 13.5 15.5 L 8 12.5 L 2.5 15.5 L 4 10 L 0 6 L 5.5 5.5 Z" />
+  </g>
+</svg>
