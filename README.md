@@ -161,6 +161,8 @@ Here are some of the key open-source projects, tools, and portfolios I have buil
 <br/><br/>
 
 <!-- START_SECTION:activity -->
+*   🌱 Created branch `main` in [shobhitrawal-skr/my-profile](https://github.com/shobhitrawal-skr/my-profile)
+*   🌱 Created branch `main` in [shobhitrawal-skr/shobhitrawal-skr](https://github.com/shobhitrawal-skr/shobhitrawal-skr)
 *   🌱 Created branch `main` in [shobhitrawal-skr/senior-data-engineer-interview-playbook](https://github.com/shobhitrawal-skr/senior-data-engineer-interview-playbook)
 *   🌱 Created branch `main` in [shobhitrawal-skr/second-brain-guide](https://github.com/shobhitrawal-skr/second-brain-guide)
 <!-- END_SECTION:activity -->
@@ -174,8 +176,8 @@ Here are some of the key open-source projects, tools, and portfolios I have buil
 
 <!-- START_SECTION:repositories -->
 *   **[senior-data-engineer-interview-playbook](https://github.com/shobhitrawal-skr/senior-data-engineer-interview-playbook)** • ` HTML ` — A complete Senior Data Engineer Interview Playbook with SQL, PySpark, Spark, Databricks, Azure, System Design, coding questions, and real-world interview scenarios
-*   **[second-brain-guide](https://github.com/shobhitrawal-skr/second-brain-guide)** • ` HTML ` — No description provided.
-*   **[vidnestor-web](https://github.com/shobhitrawal-skr/vidnestor-web)** • ` JavaScript ` — No description provided.
+*   **[second-brain-guide](https://github.com/shobhitrawal-skr/second-brain-guide)** • ` HTML ` — Build your own AI-powered Second Brain with Obsidian and AI coding agents — complete setup guide, prompts, knowledge graph, automation, and workflows. 🧠🤖
+*   **[vidnestor-web](https://github.com/shobhitrawal-skr/vidnestor-web)** • ` JavaScript ` — Web interface for VidNestor — a simple and user-friendly tool for downloading videos and audio with multiple format and quality options. 🎥⚡
 *   **[stitchr-release](https://github.com/shobhitrawal-skr/stitchr-release)** — Stitchr providing an easy and powerful video stitching experience
 <!-- END_SECTION:repositories -->
 
