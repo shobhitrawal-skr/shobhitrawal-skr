@@ -164,7 +164,6 @@ Here are some of the key open-source projects, tools, and portfolios I have buil
 *   🌱 Created branch `main` in [shobhitrawal-skr/my-profile](https://github.com/shobhitrawal-skr/my-profile)
 *   🌱 Created branch `main` in [shobhitrawal-skr/shobhitrawal-skr](https://github.com/shobhitrawal-skr/shobhitrawal-skr)
 *   🌱 Created branch `main` in [shobhitrawal-skr/senior-data-engineer-interview-playbook](https://github.com/shobhitrawal-skr/senior-data-engineer-interview-playbook)
-*   🌱 Created branch `main` in [shobhitrawal-skr/second-brain-guide](https://github.com/shobhitrawal-skr/second-brain-guide)
 <!-- END_SECTION:activity -->
 
 <br/>
